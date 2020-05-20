@@ -52,5 +52,12 @@ class Song
     return song
   end
   
+  def self.create_from_filename(name)
+    song = self.new
+    song.name = name
+    @@all.push(song)
+    return song
+  end
+  
 
 end
