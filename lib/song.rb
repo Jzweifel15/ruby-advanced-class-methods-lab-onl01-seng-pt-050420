@@ -30,13 +30,7 @@ class Song
   end
   
   def self.find_by_name(name)
-    songs  = []
-    @@all.each do |song|
-      if song.name == name 
-        songs.push(name)
-      end
-    end
-    return songs
+    @all.find
   end
 
 end
