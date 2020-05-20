@@ -36,6 +36,7 @@ class Song
         songs.push(name)
       end
     end
+    return songs
   end
 
 end
