@@ -24,7 +24,8 @@ class Song
   
   def self.create_by_name(name)
     song = self.new
-    self.class.all.save
+    self.all.push(song)
+    return song 
   end
 
 end
