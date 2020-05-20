@@ -33,7 +33,7 @@ class Song
     songs  = []
     @@all.each do |song|
       if song.name == name 
-        
+        songs.push(name)
       end
     end
   end
